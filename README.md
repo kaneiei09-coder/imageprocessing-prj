@@ -1,4 +1,4 @@
-﻿# Image Processing & Recognition Project
+# Image Processing & Recognition Project
 
 Fruit and Vegetable Image Recognition project using Python, OpenCV, and Image Processing techniques.
 
@@ -28,7 +28,7 @@ $env:KAGGLE_API_TOKEN = "YOUR_KAGGLE_API_TOKEN"
 ### 3. Download Dataset
 Run the data collection script to fetch and extract images directly into the local `data/` folder:
 ```bash
-python download_data.py
+python src/download_data.py
 ```
 
 ## Project Structure
@@ -38,7 +38,9 @@ imageprocessing-prj/
 │   ├── train/               # Training set (36 classes)
 │   ├── validation/          # Validation set (36 classes)
 │   └── test/                # Test set (36 classes)
-├── download_data.py         # Script to download dataset from Kaggle
+├── src/                     # Source code directory
+│   ├── __init__.py
+│   └── download_data.py     # Script to download dataset from Kaggle
 ├── requirements.txt         # Project Python dependencies
 ├── .gitignore               # Git ignore configuration
 └── README.md                # Project documentation

@@ -1,4 +1,4 @@
-﻿"""
+"""
 Fruit and Vegetable Image Recognition Dataset Downloader
 Downloads dataset from Kaggle using kagglehub and organizes it into the project data directory.
 """
@@ -17,7 +17,7 @@ if sys.stderr and hasattr(sys.stderr, "reconfigure"):
 import kagglehub
 
 DATASET_HANDLE = "kritikseth/fruit-and-vegetable-image-recognition"
-PROJECT_ROOT = Path(__file__).resolve().parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_TARGET_DIR = PROJECT_ROOT / "data"
 
 def download_and_setup_dataset(target_dir: Path = DEFAULT_TARGET_DIR) -> Path:

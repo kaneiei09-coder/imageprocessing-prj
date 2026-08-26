@@ -1,0 +1,30 @@
+﻿# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.class
+.pytest_cache/
+
+# Virtual Environments
+venv/
+env/
+.venv/
+
+# Credentials and environment secrets
+.env
+.env.*
+.kaggle/
+access_token*
+kaggle.json
+
+# Dataset directory (Download locally using python download_data.py)
+/data/
+/dataset/
+*.zip
+*.tar.gz
+*.7z
+
+# System & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
